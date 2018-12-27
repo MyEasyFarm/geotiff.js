@@ -17,6 +17,7 @@ export function getDecoder(fileDirectory) {
       // throw new Error('JPEG compression not supported.');
       return new JpegDecoder(fileDirectory);
     case 8: // Deflate
+    case 32946:
       return new DeflateDecoder();
     // case 32946: // deflate ??
     //  throw new Error("Deflate compression not supported.");
